@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <head>
+         <meta charset="utf-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <!-- mobile metas -->
+         <meta name="viewport" content="width=device-width, initial-scale=1">
+         <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+         <!-- site metas -->
+         <title>Contato</title>
+         
+         <!-- bootstrap css -->
+         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+         <!-- style css -->
+         <link rel="stylesheet" type="text/css" href="css/style.css">
+         <!-- fevicon -->
+         <link rel="icon" href="images/fevicon.png" type="image/gif" />
+         <!-- fonts -->
+         <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
+      </head>
+   <body>
+      <!-- inicio header -->
+      <div class="header_section">
+         <div class="header_main">
+            <div class="mobile_menu">
+               <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="logo_mobile"><a href="index.html"><img src="images/logo.png" alt="image-logo"></a></div>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                     <ul class="navbar-nav">
+                        <li class="nav-item active">
+                           <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link" href="">Sobre</a>
+                        </li>
+                        <li class="nav-item"></li>
+                           <a class="nav-link" href="">Pratos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="">Contatos</a>
+                        </li>
+                        <li class="nav-item">
+                           <a class="nav-link " href="#"><img src="images/search-icon.png" alt="search"></a>
+                        </li>
+                     </ul>
+                  </div>
+               </nav>
+            </div>
+            <div class="container-fluid">
+               <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+               <div class="menu_main">
+                  <ul>
+                     <li class="active"><a href="index.html">Inicio</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
+                     <li><a href="">Pratos</a></li>
+                     <li><a href="contato.html">Contatos</a></li>
+                     <li><a href="#"><img src="images/search-icon.png" alt="search-icon"></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+         <!-- background bg start -->
+      <div class="background_bg">     
+        <!-- Contato inicio -->
+        <div class="contact_section layout_padding">
+         <div class="container">
+            <h1 class="menu_taital">Contato</h1>
+         </div>
+         <div class="contact_section_2">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-md-6">
+                     <form action="./php/email.php" method="post">
+                        <div class="mail_section_1">
+                           <input type="text" class="mail_text" placeholder="Nome completo"  id="nome" name="Nome">
+                           <input type="text" class="mail_text" placeholder="Telefone" id="telefone" name="Telefone">
+                           <input type="text" class="mail_text" placeholder="email@exemplo.com" id="email" name="Email">
+                           <textarea class="massage-bt" placeholder="Conte-nos como poderiamos auxiliá-los em seu evento." rows="5" id="comment" id="mensagem" name="Mensagem"></textarea>
+                           <div class="send_bt">
+                              <button type="submit">Enviar</button>
+                           </div>
+                        </div>
+                     </form>   
+                  </div>
+                  <div class="col-md-6 padding_right_0">
+                     <div class="map_section"><img src="images/contato-img.png" alt="contato-img"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- Contato final -->
+      </div>
+      <!-- background bg end -->
+           <!-- inicio footer -->
+           <div class="footer_section layout_padding">
+            <div class="container">
+               <h3 class="follow_text">Acompanhe-nos</h3>
+               <div class="social_icon">
+                  <ul>
+                     <li><a href="https://www.facebook.com/dumexicoprudente"><img src="images/fb-icon.png" alt="fb-icon"></a></li>
+                     <li><a href="https://web.whatsapp.com/"><img src="images/wp-icon.png" alt="wp-icon"></a></li>
+                     <li><a href="https://www.instagram.com/dumexicoprudente"><img src="images/instagram-icon.png" alt="instagram-icon"></a></li>
+                  </ul>
+               </div>
+               <div class="location_main">
+                  <div class="location_left">
+                     <div class="call_text"><a href="#"><img src="images/map-icon.png" alt="map-icon"><span class="call_padding">Rua Joaquim Pereira de Almeida, 168, Presidente Prudente, São Paulo 19061-550</span></a></div>
+                  </div>
+                  <div class="location_middle">
+                     <div class="call_text"><a href="#"><img src="images/mail-icon.png" alt="mail-icon"><span class="call_padding">Contato@DuMexico.com</span></a></div>
+                  </div>
+                  <div class="location_right">
+                     <div class="call_text"><a href="#"><img src="images/call-icon.png" alt="call-icon"><span class="call_padding">(18) 99129-8536</span></a></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- copyright seção -->
+         <div class="copyright_section">
+            <div class="container">
+               <p class="copyright_text">Copyright © 2024  Du Mexico | Todos os Direitos Reservados</p>
+            </div>
+         </div>
+         <!-- Javascript files-->
+         <script src="JS/index.js"></script>
+         <script src="php/email.php"></script>
+      </body>
+</html>
