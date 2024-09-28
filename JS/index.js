@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     let counter = 1;
-    const imageSize = images[0].clientWidth;
+    let currentImageSize = images[0].clientWidth;
 
     // Clonar a primeira e última imagens para criar o loop infinito
     const firstClone = images[0].cloneNode(true);
@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carouselSlide.insertBefore(lastClone, carouselSlide.firstChild);
 
     const allImages = document.querySelectorAll('.container-carrousel img');
-    let currentImageSize = images[0].clientWidth;
+    currentImageSize = allImages[0].clientWidth;
 
     // Definir a posição inicial do carrossel
     carouselSlide.style.transform = `translateX(${-currentImageSize * counter}px)`;

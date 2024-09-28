@@ -216,9 +216,21 @@ button {
     width: 100%;
     float: left;
     background-image: url(../images/banner-bg.png);
+    background-size: cover; /* Cobrir toda a área */
+    background-position: center; /* Centralizar a imagem */
     height: auto;
-    background-size: 100%;
     padding: 0px 0px 20px 0px;
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+/* Media query para telas menores */
+@media (max-width: 768px) {
+    .header_section {
+        background-image: url(../images/banner-bg.png); /* Garante que a imagem continue no mobile */
+        background-size: cover; /* Ajusta para que a imagem cubra a área */
+        background-position: center;
+        padding: 10px 0px 20px 0px;
+    }
 }
 .bg-light {
     background-color: transparent !important;
@@ -441,6 +453,7 @@ button {
     color: #f1f0ef;
     font-weight: bold;
     text-transform: uppercase;
+    padding: 20px;
 }
 h1.menu_taital::after {
     content: '';
@@ -482,14 +495,15 @@ h1.menu_taital::after {
 }
 
 .read_bt1 {
-    width: 170px;
-    float: left;
+    display: flex;
+    justify-content: center; /* Centraliza o botão horizontalmente */
+    width: 100%; /* O contêiner ocupa toda a largura da coluna */
     margin-top: 15px;
     margin-bottom: 15px;
 }
+
 .read_bt1 a {
-    width: 100%;
-    float: left;
+    width: 170px; /* Define o tamanho fixo do botão */
     font-size: 16px;
     color: #ffffff;
     background-color: #b60213;
@@ -497,11 +511,14 @@ h1.menu_taital::after {
     padding: 10px 0px;
     border-radius: 30px;
     font-weight: bold;
+    text-decoration: none; /* Garante que não tenha sublinhado */
 }
-.read_bt1 a:hover{
+
+.read_bt1 a:hover {
     color: #000;
     background-color: #ffffff;
 }
+
 
 .seemore_bt {
     width: 200px;
