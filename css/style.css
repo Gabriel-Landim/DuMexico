@@ -929,6 +929,21 @@ and (max-width: 769px) {
     object-fit: contain;
 }
 
+/* Implementação do busca */
+.nav-link {
+    position: relative; /* Para que o texto seja posicionado em relação ao link */
+}
+
+#search-text {
+    position: absolute; /* Para que o texto apareça em cima do ícone */
+    left: 30px; /* Ajuste conforme necessário para se alinhar corretamente */
+    top: 50%;
+    transform: translateY(-50%); /* Centraliza verticalmente */
+    color: #000; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    pointer-events: none; /* Ignora eventos de clique no texto */
+}
+
 
 
 
