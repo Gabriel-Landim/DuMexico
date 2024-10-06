@@ -9,7 +9,7 @@
          <meta name="viewport" content="width=device-width, initial-scale=1">
          <meta name="viewport" content="initial-scale=1, maximum-scale=1">
          <!-- site metas -->
-         <title>Sobre</title>
+         <title>Contato</title>
          
          <!-- bootstrap css -->
          <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -27,7 +27,7 @@
          <div class="header_main">
             <div class="mobile_menu">
                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                  <div class="logo_mobile"><a href="index.html"><img src="images/logo.png"></a></div>
+                  <div class="logo_mobile"><a href="index.html"><img src="images/logo.png" alt="image-logo"></a></div>
                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                   </button>
@@ -45,22 +45,18 @@
                         <li class="nav-item">
                            <a class="nav-link " href="">Contatos</a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link " href="#"><img src="images/search-icon.png"></a>
-                        </li>
                      </ul>
                   </div>
                </nav>
             </div>
             <div class="container-fluid">
-               <div class="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+               <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
                <div class="menu_main">
                   <ul>
                      <li><a href="index.html">Inicio</a></li>
-                     <li class="active"><a href="sobre.html">Sobre</a></li>
+                     <li><a href="sobre.html">Sobre</a></li>
                      <li><a href="pratos.html">Pratos</a></li>
-                     <li><a href="contato.html">Contatos</a></li>
-                     <li><a href="#"><img src="images/search-icon.png"></a></li>
+                     <li class="active"><a href="contato.html">Contatos</a></li>
                   </ul>
                </div>
             </div>
@@ -68,51 +64,35 @@
       </div>
          <!-- background bg start -->
       <div class="background_bg">     
-       <!-- Sobre inicio -->
-       <div class="about_section layout_padding">
+        <!-- Contato inicio -->
+        <div class="contact_section layout_padding">
          <div class="container">
-            <h1 class="menu_taital">Chef<br>Eduardo Hamed</h1>
-            <div class="about_section_2">
+            <h1 class="menu_taital">Contato</h1>
+         </div>
+         <div class="contact_section_2">
+            <div class="container-fluid">
                <div class="row">
                   <div class="col-md-6">
-                     <p class="about_text">Autêntica comida mexicana, feita por um verdadeiro Mexicano. Du México é um delivery que traz sabores originais dos clássicos mexicanos conhecidos no mundo todo: nachos, burritos, quesadillas e chimichangas.
-                        Criado por Eduardo Hamed, nascido na Cidade do México em 6 de julho de 1976. Terceiro de 4 irmãos, perdeu o pai aos 6 anos de idade 
-                        quando refugiou-se com os avós. Assim, descobriu sua paixão pela comida recebendo os ensinamentos de sua avó.</p>
-                        <div class=""><img src="images/img-hamed-2.png"></div>
-                     <div class="read_bt1"><a href="#">Saiba mais</a></div>
+                     <form action="./php/send_email.php" method="post">
+                        <div class="mail_section_1">
+                           <input type="text" class="mail_text" placeholder="Nome completo"  id="nome" name="Nome">
+                           <input type="text" class="mail_text" placeholder="Telefone" id="telefone" name="Telefone">
+                           <input type="text" class="mail_text" placeholder="email@exemplo.com" id="email" name="Email">
+                           <textarea class="massage-bt" placeholder="Conte-nos como poderiamos auxiliá-los em seu evento." rows="5" id="comment" id="mensagem" name="Mensagem"></textarea>
+                           <div class="send_bt">
+                              <button type="submit">Enviar</button>
+                           </div>
+                        </div>
+                     </form>   
                   </div>
-                  <div class="col-md-6">
-                     <div class="image_2"><img src="images/img-hamed.png"></div>
-                  </div>
-               </div>
-            </div>
-            <div class="about_section_3">
-               <div class="row">
-                  <div class="col-md-3">
-                     <div class="border_main">
-                        <div class="image_4"><img src="images/img-4.png"></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="border_main">
-                        <div class="image_4"><img src="images/img-5.png"></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="border_main">
-                        <div class="image_4"><img src="images/img-6.png"></div>
-                     </div>
-                  </div>
-                  <div class="col-md-3">
-                     <div class="border_main">
-                        <div class="image_4"><img src="images/img-7.png"></div>
-                     </div>
+                  <div class="col-md-6 padding_right_0">
+                     <div class="map_section"><img src="images/contato-img.png" alt="contato-img"></div>
                   </div>
                </div>
             </div>
          </div>
       </div>
-      <!-- Sobre final -->
+      <!-- Contato final -->
       </div>
       <!-- background bg end -->
            <!-- inicio footer -->
@@ -121,20 +101,20 @@
                <h3 class="follow_text">Acompanhe-nos</h3>
                <div class="social_icon">
                   <ul>
-                     <li><a href="https://www.facebook.com/dumexicoprudente"><img src="images/fb-icon.png"></a></li>
-                     <li><a href="https://web.whatsapp.com/"><img src="images/wp-icon.png"></a></li>
-                     <li><a href="https://www.instagram.com/dumexicoprudente"><img src="images/instagram-icon.png"></a></li>
+                     <li><a href="https://www.facebook.com/dumexicoprudente"><img src="images/fb-icon.png" alt="fb-icon"></a></li>
+                     <li><a href="https://web.whatsapp.com/"><img src="images/wp-icon.png" alt="wp-icon"></a></li>
+                     <li><a href="https://www.instagram.com/dumexicoprudente"><img src="images/instagram-icon.png" alt="instagram-icon"></a></li>
                   </ul>
                </div>
                <div class="location_main">
                   <div class="location_left">
-                     <div class="call_text"><a href="#"><img src="images/map-icon.png"><span class="call_padding">Rua Joaquim Pereira de Almeida, 168, Presidente Prudente, São Paulo 19061-550</span></a></div>
+                     <div class="call_text"><a href="#"><img src="images/map-icon.png" alt="map-icon"><span class="call_padding">Rua Joaquim Pereira de Almeida, 168, Presidente Prudente, São Paulo 19061-550</span></a></div>
                   </div>
                   <div class="location_middle">
-                     <div class="call_text"><a href="#"><img src="images/mail-icon.png"><span class="call_padding">Contato@DuMexico.com</span></a></div>
+                     <div class="call_text"><a href="#"><img src="images/mail-icon.png" alt="mail-icon"><span class="call_padding">Contato@DuMexico.com</span></a></div>
                   </div>
                   <div class="location_right">
-                     <div class="call_text"><a href="#"><img src="images/call-icon.png"><span class="call_padding">(18) 99129-8536</span></a></div>
+                     <div class="call_text"><a href="#"><img src="images/call-icon.png" alt="call-icon"><span class="call_padding">(18) 99129-8536</span></a></div>
                   </div>
                </div>
             </div>
@@ -149,6 +129,6 @@
       <script src="JS/jquery.min.js"></script>
       <script src="JS/bootstrap.bundle.min.js"></script>
       <script src="JS/index.js"></script>
-      <script src="JS/index.js"></script>
-      </body>
+      <script src="./php/send_mail2.php"></script>
+   </body>
 </html>
