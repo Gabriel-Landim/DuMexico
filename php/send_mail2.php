@@ -5,18 +5,18 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php';
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['Nome']);
-    $phone = htmlspecialchars($_POST['Telefone']);
-    $message = htmlspecialchars($_POST['Mensagem']);
+    $name = htmlspecialchars($_POST['nome']);
+    $phone = htmlspecialchars($_POST['telefone']);
+    $message = htmlspecialchars($_POST['mensagem']);
 
     $mail = new PHPMailer(true);
 
     try {
-        // Configurações do servidor SMTP
+        // ConfiguraÃ§Ãµes do servidor SMTP
         $mail->isSMTP();
         $mail->Host = 'smtp.gmail.com';  // Servidor SMTP
         $mail->SMTPAuth = true;
-        $mail->Username = 'vanessa.tecma@gmail.com'; // Usuário SMTP
+        $mail->Username = 'seu-email@gmail.com'; // UsuÃ¡rio SMTP
         $mail->Password = 'sua-senha'; // Senha SMTP
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
@@ -25,11 +25,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->setFrom('seu-email@gmail.com', 'Seu Nome');
         $mail->addAddress('destinatario@example.com'); 
 
-        // Conteúdo do e-mail
+        // ConteÃºdo do e-mail
         $mail->isHTML(true); 
         $mail->Subject = 'Novo Contato';
-        $mail->Body    = "Nome: $name<br>Telefone: $phone<br>Mensagem:<br>$message";
-        $mail->AltBody = "Nome: $name\nTelefone: $phone\nMensagem:\n$message";
+        $mail->Body    = "nome: $name<br>telefone: $phone<br>mensagem:<br>$message";
+        $mail->AltBody = "nome: $name\ntelefone: $phone\nmensagem:\n$message";
 
         $mail->send();
         echo 'E-mail enviado com sucesso!';

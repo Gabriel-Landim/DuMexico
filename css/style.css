@@ -223,6 +223,12 @@ button {
     background-repeat: no-repeat; /* Impede que a imagem se repita */
 }
 
+@media (max-width: 990px) {
+   
+    .container-fluid {
+        display: none;
+    }
+}
 /* Media query para telas menores */
 @media (max-width: 768px) {
     .header_section {
@@ -230,6 +236,9 @@ button {
         background-size: cover; /* Ajusta para que a imagem cubra a área */
         background-position: center;
         padding: 10px 0px 20px 0px;
+    }
+    .container-fluid {
+        display: none;
     }
 }
 .bg-light {
