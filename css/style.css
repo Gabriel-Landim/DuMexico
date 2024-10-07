@@ -218,29 +218,33 @@ button {
     background-image: url(../images/banner-bg.png);
     background-size: cover; /* Cobrir toda a área */
     background-position: center; /* Centralizar a imagem */
-    height: auto;
+    min-height: 300px; /* Defina uma altura mínima */
     padding: 0px 0px 20px 0px;
     background-repeat: no-repeat; /* Impede que a imagem se repita */
+    background-color: #f1f1f1; /* Cor de fundo como fallback */
 }
 
+/* Media query para telas menores */
 @media (max-width: 990px) {
-   
     .container-fluid {
-        display: none;
+        display: none; /* Mantenha esta regra se necessário */
     }
 }
-/* Media query para telas menores */
+
 @media (max-width: 768px) {
     .header_section {
-        background-image: url(../images/banner-bg.png); /* Garante que a imagem continue no mobile */
-        background-size: cover; /* Ajusta para que a imagem cubra a área */
+        background-size: cover; /* Garantir que a imagem continue */
         background-position: center;
         padding: 10px 0px 20px 0px;
+        min-height: 300px; /* Mantém a altura mínima */
+        background-color: #f1f1f1; /* Cor de fundo como fallback */
     }
+    
     .container-fluid {
-        display: none;
+        display: none; /* Mantenha esta regra se necessário */
     }
 }
+
 .bg-light {
     background-color: transparent !important;
 }
@@ -463,16 +467,24 @@ button {
     font-weight: bold;
     text-transform: uppercase;
     padding: 20px;
+    position: relative; /* Adicionado para garantir que o ::after seja posicionado em relação ao elemento pai */
 }
+
 h1.menu_taital::after {
     content: '';
     position: absolute;
     width: 400px;
     background-color: #fff;
     height: 2px;
-    left: initial;
-    right: 0px;
-    bottom: 40px;
+    left: 0; /* Posiciona o after corretamente no eixo X */
+    bottom: -10px; /* Ajustado para posicionar abaixo do texto */
+}
+
+@media (max-width: 767px) {
+    h1.menu_taital::after {
+        width: 100%; /* Torna a barra responsiva */
+        bottom: -5px; /* Ajuste fino do posicionamento inferior na responsividade */
+    }
 }
 /* Final Titulo principal do menu*/
 .uni_text {
@@ -941,16 +953,6 @@ and (max-width: 769px) {
 /* Implementação do busca */
 .nav-link {
     position: relative; /* Para que o texto seja posicionado em relação ao link */
-}
-
-#search-text {
-    position: absolute; /* Para que o texto apareça em cima do ícone */
-    left: 30px; /* Ajuste conforme necessário para se alinhar corretamente */
-    top: 50%;
-    transform: translateY(-50%); /* Centraliza verticalmente */
-    color: #000; /* Cor do texto */
-    font-size: 16px; /* Tamanho do texto */
-    pointer-events: none; /* Ignora eventos de clique no texto */
 }
 
 
