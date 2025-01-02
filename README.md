@@ -2,6 +2,8 @@
 
 O site "DuMexico" é um portal responsivo, focado em promover a autêntica comida mexicana, com informações claras sobre o restaurante, especialidades no cardápio, e uma história inspiradora do chef fundador. Ele combina funcionalidade moderna e design atraente para proporcionar uma experiência agradável ao usuário.
 
+https://github.com/user-attachments/assets/8c57df4a-005e-4808-9034-036ea545523a
+
 ## Funcionalidades do Site DuMexico
 
 ### Cabeçalho e Navegação
