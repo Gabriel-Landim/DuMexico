@@ -1,10 +1,10 @@
-#Site DuMexico
+# Site DuMexico
 
 O site "DuMexico" é um portal responsivo, focado em promover a autêntica comida mexicana, com informações claras sobre o restaurante, especialidades no cardápio, e uma história inspiradora do chef fundador. Ele combina funcionalidade moderna e design atraente para proporcionar uma experiência agradável ao usuário.
 
 ## Funcionalidades do Site DuMexico
 
-###Cabeçalho e Navegação
+### Cabeçalho e Navegação
 * O site possui um menu responsivo que se adapta para dispositivos móveis, permitindo fácil navegação.
 * As principais seções acessíveis pelo menu são:
    - Início: Página inicial do site.
@@ -13,11 +13,11 @@ O site "DuMexico" é um portal responsivo, focado em promover a autêntica comid
    - Contatos: Informações de contato.
 ________________________________________________
 
-###Seção de Banner
+### Seção de Banner
 * Um carrossel na página inicial exibe imagens destacadas, com botões de navegação para percorrer o conteúdo visual.
 _______________________________________________
 
-###Seção de Especialidades
+### Seção de Especialidades
 * Destaca os pratos principais, como:
   - Quesadillas: Descritas como o carro-chefe do restaurante, feitas com tortillas macias e recheios variados.
   - Burritos: Preparados com ingredientes frescos e temperos autênticos.
@@ -26,14 +26,14 @@ _______________________________________________
 
 _____________________________________________
 
-###Seção Sobre
+### Seção Sobre
 * Apresenta a história do restaurante e do chef Eduardo Hamed, que trouxe autênticos sabores mexicanos.
 * Inclui informações pessoais do chef e sua conexão com a culinária mexicana.
 * Exibe imagens do chef e pratos tradicionais.
 * Link para saber mais detalhes na página "Sobre".
 ____________________________________________
 
-###Rodapé
+### Rodapé
 * Inclui links para redes sociais:
   - Facebook
   - WhatsApp
